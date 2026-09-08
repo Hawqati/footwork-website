@@ -1,0 +1,5 @@
+import Link from 'next/link';
+export default function Steps(){
+ const steps=[['01','KENNISMAKEN','Proeftraining of Performance Test om speler, niveau en doelen te leren kennen.'],['02','METEN','We bepalen waar de grootste winst ligt: snelheid, kracht, coördinatie, reactie of focus.'],['03','TRAINEN','Gerichte sessies volgens de F4 Performance Method, passend bij leeftijd en belastbaarheid.'],['04','PROGRESSIE','We herhalen relevante tests en maken ontwikkeling zichtbaar op de Player Performance Card.']];
+ return <section className="section process-section"><div className="section-heading"><span className="eyebrow">ZO WERKT HET</span><h2>VAN POTENTIEEL NAAR PROGRESSIE.</h2><p>Geen losse oefeningen zonder plan. We werken doelgericht van kennismaking naar meetbare ontwikkeling.</p></div><div className="process-grid">{steps.map(([n,t,p])=><article key={n}><span>{n}</span><h3>{t}</h3><p>{p}</p></article>)}</div><div className="center-action"><Link className="btn btn-green" href="/contact">Start met een proeftraining →</Link></div></section>
+}

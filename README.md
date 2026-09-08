@@ -1,32 +1,46 @@
-# FOOTWORK — Dutch Football Performance Academy
+# FOOTWORK V3 — Dutch Football Performance Academy
 
-Complete Next.js 15 website voor FOOTWORK in ’t Gooi.
+Complete Next.js site voor Vercel.
 
-## Pagina's
-- Home
-- Onze Methode
-- Voetbaltraining
-- Kickboxing Performance
-- Physical Performance
+## Deploy
+1. Upload de inhoud van deze map naar dezelfde GitHub repository.
+2. Vercel bouwt automatisch opnieuw.
+3. Framework: Next.js. Root Directory: `./`.
+
+## Contactformulier echt laten mailen
+De site gebruikt de Resend API zonder extra npm package.
+Voeg in Vercel → Project → Settings → Environment Variables toe:
+
+- `RESEND_API_KEY` = jouw Resend API key
+- `CONTACT_TO_EMAIL` = e-mailadres waar aanvragen binnenkomen
+- `CONTACT_FROM_EMAIL` = geverifieerde afzender, bv. `FOOTWORK <aanvragen@jouwdomein.nl>`
+- `NEXT_PUBLIC_CONTACT_EMAIL` = zichtbaar contactadres
+- `NEXT_PUBLIC_WHATSAPP_NUMBER` = internationaal formaat zonder +, bv. `31612345678`
+- `NEXT_PUBLIC_INSTAGRAM` = bv. `@footworkacademy`
+- `NEXT_PUBLIC_SITE_URL` = definitief domein, bv. `https://footworkacademy.nl`
+
+Zonder `RESEND_API_KEY` + `CONTACT_TO_EMAIL` toont het formulier bewust een duidelijke configuratiemelding en verstuurt het geen persoonsgegevens naar een onbekende bestemming.
+
+## Wat zit in V3
+- Complete homepage + methode + aanbod
 - FOOTWORK 8
 - Performance Test
-- Trainingen & Prijzen
-- Voor Voetbalclubs
-- Over Ons
+- Trainingen & prijzen
+- Rooster & locaties
+- Clubprogramma's
+- Over ons
 - FAQ
-- Contact
+- Proeftraining/contact
+- Server-side leadformulier
+- Bedankpagina
+- Mobiele sticky CTA + optionele WhatsApp
+- Privacy + concept trainingsvoorwaarden
+- SEO metadata, Open Graph, sitemap en robots
+- Responsive navigatie
 
-## Deploy via Vercel
-1. Upload de inhoud van deze map naar de root van je GitHub repository.
-2. Controleer dat `app`, `components`, `public`, `lib`, `package.json` en `next.config.mjs` direct in de repository-root staan.
-3. Vercel: Framework = Next.js, Root Directory = `./`.
-4. Deploy.
-
-## Nog definitief invullen
-- `lib/site.js`: definitief e-mailadres en Instagram-handle.
-- `app/over-ons/page.jsx`: namen, eigen foto's, ervaring/diploma's van de twee trainers.
-- `app/trainingen-prijzen/page.jsx`: prijzen zijn concept/startprijzen en moeten definitief worden bevestigd.
-- Het contactformulier gebruikt nu `mailto:` en opent het e-mailprogramma. Voor volledig automatische verzending kan later een mailservice/API worden gekoppeld.
-
-## Security
-Next.js staat vast op 15.5.25 (Maintenance-LTS backport release op het moment dat deze versie is gemaakt).
+## Nog definitief invullen voor commerciële livegang
+- Echte trainersnamen, foto's en kwalificaties
+- Exacte trainingsdagen en locaties
+- Definitieve prijzen en betaal/annuleringsvoorwaarden
+- Officiële bedrijfsgegevens
+- Definitieve privacy/voorwaarden juridisch laten controleren
