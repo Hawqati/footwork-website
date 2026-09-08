@@ -1,0 +1,22 @@
+/* Minimal brand and image-quality refinements requested for FOOTWORK ACADEMY */
+.brand{height:78px;overflow:visible}
+.brand-logo-wrap{display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;line-height:1}
+.brand-logo-wrap img{display:block;width:100%;height:auto;max-height:57px;object-fit:contain}
+.brand-academy{margin-top:-2px;color:#fff;font-size:10px;font-weight:900;letter-spacing:.48em;padding-left:.48em}
+.footer-brand{display:inline-flex;flex-direction:column;align-items:center}
+.footer-brand img{display:block;height:auto}
+.footer-brand-academy{margin-top:-8px;color:#fff;font-size:10px;font-weight:900;letter-spacing:.48em;padding-left:.48em}
+
+/* Keep the existing cards/design; only make the three training visuals cleaner and brighter. */
+.programs .card-img{height:230px;overflow:hidden;background:#080808}
+.programs .card-img img{object-fit:cover;object-position:center top;filter:brightness(1.22) contrast(1.08) saturate(.9);transform:scale(1.045)}
+.programs .card-img:after{background:linear-gradient(180deg,transparent 72%,rgba(0,0,0,.32))}
+
+/* Force only the Sterker lightning mark to render as a lime monochrome symbol. */
+.pillar:first-child b{color:var(--lime);font-family:Arial,Helvetica,sans-serif;font-variant-emoji:text;font-size:36px;text-shadow:0 0 14px rgba(185,240,0,.18)}
+
+@media(max-width:650px){
+  .brand-logo-wrap img{max-height:47px}
+  .brand-academy{font-size:8px;letter-spacing:.38em;padding-left:.38em;margin-top:-1px}
+  .programs .card-img{height:210px}
+}
