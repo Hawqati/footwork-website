@@ -10,10 +10,10 @@
 .footer-brand img{display:block;height:auto}
 .footer-brand-academy{margin-top:-8px;color:#fff;font-size:10px;font-weight:900;letter-spacing:.48em;padding-left:.48em}
 
-/* Header navigation: selected primary pages in matching lime pills, trial CTA in orange. */
-.nav-links{gap:10px}
-.nav-links .nav-pill{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 17px;border-radius:999px;background:var(--lime);color:#080808!important;font-size:11px;font-weight:950;letter-spacing:.045em;text-transform:uppercase;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
-.nav-links .nav-pill:hover{color:#080808!important;transform:translateY(-1px);filter:brightness(1.05);box-shadow:0 7px 20px rgba(185,240,0,.14)}
+/* Header navigation: normal links, green Rooster button, orange Proeftraining CTA. */
+.nav-links{gap:22px}
+.nav-links .nav-rooster{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border-radius:999px;background:var(--lime);color:#080808!important;font-size:11px;font-weight:950;letter-spacing:.045em;text-transform:uppercase;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
+.nav-links .nav-rooster:hover{color:#080808!important;transform:translateY(-1px);filter:brightness(1.05);box-shadow:0 7px 20px rgba(185,240,0,.14)}
 .nav-trial{background:var(--orange)!important;color:#fff!important;border-color:var(--orange)!important;min-height:44px;padding-left:22px;padding-right:22px}
 .nav-trial:hover{color:#fff!important;filter:brightness(1.06);box-shadow:0 7px 20px rgba(255,116,23,.16)}
 
@@ -65,7 +65,7 @@ body{font-family:"Segoe UI",Inter,"Helvetica Neue",Arial,sans-serif}
 @media(max-width:1100px){
   .hero-copy .trust-strip{grid-template-columns:repeat(2,minmax(0,1fr));max-width:620px}
   .f4-heading{gap:14px}
-  .nav-links .nav-pill,.nav-links .nav-trial{width:100%;justify-content:flex-start;padding:12px 16px;min-height:0}
+  .nav-links .nav-rooster,.nav-links .nav-trial{width:100%;justify-content:flex-start;padding:12px 16px;min-height:0}
 }
 
 @media(max-width:800px){
