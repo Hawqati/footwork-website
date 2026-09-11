@@ -11,9 +11,9 @@ const pillars = [
   ['⬡', 'Weerbaarder', 'Focus, discipline en zelfvertrouwen']
 ];
 const programs = [
-  { image: '/images/football-training.jpg.png', title: 'Voetbaltraining', text: 'Voetwerk, techniek, wendbaarheid en toepassing onder druk.', href: '/voetbaltraining' },
-  { image: '/images/kickboxing-training.jpg.png', title: 'Kickboxing performance', text: 'Reactie, balans, ritme, discipline en weerbaarheid. Zonder hard sparren of hoofdcontact.', href: '/kickboksen' },
-  { image: '/images/strength-training.jpg.png', title: 'Physical performance', text: 'Kracht, sprint, explosiviteit, core, landingstechniek en atletisch bewegen.', href: '/performance' }
+  { image: '/images/football-training.png', title: 'Voetbaltraining', text: 'Voetwerk, techniek, wendbaarheid en toepassing onder druk.', href: '/voetbaltraining' },
+  { image: '/images/kickboxing-training.png', title: 'Kickboxing performance', text: 'Reactie, balans, ritme, discipline en weerbaarheid. Zonder hard sparren of hoofdcontact.', href: '/kickboksen' },
+  { image: '/images/strength-training.png', title: 'Physical performance', text: 'Kracht, sprint, explosiviteit, core, landingstechniek en atletisch bewegen.', href: '/performance' }
 ];
 
 export default function Home() {
