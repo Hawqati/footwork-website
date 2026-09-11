@@ -10,8 +10,9 @@
 .footer-brand img{display:block;height:auto}
 .footer-brand-academy{margin-top:-8px;color:#fff;font-size:10px;font-weight:900;letter-spacing:.48em;padding-left:.48em}
 
-/* Header navigation: normal links, green Rooster button, orange Proeftraining CTA. */
+/* Header navigation: normal links, lime italic F4/8 accents, green Rooster button, orange Proeftraining CTA. */
 .nav-links{gap:22px}
+.nav-links .nav-accent{color:var(--lime);font-style:italic;font-weight:1000;display:inline-block;transform:skewX(-5deg);letter-spacing:-.02em}
 .nav-links .nav-rooster{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border-radius:999px;background:var(--lime);color:#080808!important;font-size:11px;font-weight:950;letter-spacing:.045em;text-transform:uppercase;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
 .nav-links .nav-rooster:hover{color:#080808!important;transform:translateY(-1px);filter:brightness(1.05);box-shadow:0 7px 20px rgba(185,240,0,.14)}
 .nav-trial{background:var(--orange)!important;color:#fff!important;border-color:var(--orange)!important;min-height:44px;padding-left:22px;padding-right:22px}
