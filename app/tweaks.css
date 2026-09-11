@@ -10,6 +10,12 @@
 .footer-brand img{display:block;height:auto}
 .footer-brand-academy{margin-top:-8px;color:#fff;font-size:10px;font-weight:900;letter-spacing:.48em;padding-left:.48em}
 
+/* More premium, athletic body typography across the full website. Headings keep their strong existing style. */
+body{font-family:"Segoe UI",Inter,"Helvetica Neue",Arial,sans-serif}
+.hero p,.page-hero p,.section p,.mini-cta p,.footer-grid p,.faq-list p,.contact-cards p,.form-note{font-family:"Segoe UI",Inter,"Helvetica Neue",Arial,sans-serif;font-weight:400;letter-spacing:-.012em}
+.hero p,.page-hero p,.section>p,.section-copy>p,.club-copy>p,.lead-band>div>p,.mini-cta>p,.two-col p{font-size:16px;line-height:1.62;color:#d2d2cd}
+.card p,.method-grid p,.feature-grid p,.audience-grid p,.test-grid p,.process-grid p,.pricing-grid p,.founder-grid p{font-size:14px;line-height:1.55;letter-spacing:-.008em;color:#a6a6a0}
+
 /* Keep the existing cards/design; only make the three training visuals cleaner and brighter. */
 .programs .card-img{height:230px;overflow:hidden;background:#080808}
 .programs .card-img img{object-fit:cover;object-position:center top;filter:brightness(1.22) contrast(1.08) saturate(.9);transform:scale(1.045)}
