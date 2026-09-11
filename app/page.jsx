@@ -19,7 +19,7 @@ const programs = [
 export default function Home() {
   return <>
     <section className="hero">
-      <div className="hero-copy"><span className="eyebrow">DUTCH FOOTBALL PERFORMANCE ACADEMY • ’T GOOI</span><h1>BUILD THE ATHLETE.<br/><span>IMPROVE THE PLAYER.</span></h1><p>FOOTWORK ACADEMY combineert voetbaltraining, kickboxing-inspired performance en fysieke ontwikkeling. Niet om van voetballers kickboksers te maken — wel om sterkere, snellere, explosievere en weerbaardere spelers te ontwikkelen.</p><div className="actions"><Link className="btn btn-orange" href="/contact">Plan een proeftraining →</Link><Link className="btn btn-outline" href="/footwork-8">Bekijk FOOTWORK 8</Link></div></div>
+      <div className="hero-copy"><h1>BUILD THE ATHLETE.<br/><span>IMPROVE THE PLAYER.</span></h1><p>FOOTWORK ACADEMY combineert voetbaltraining, kickboxing-inspired performance en fysieke ontwikkeling. Niet om van voetballers kickboksers te maken — wel om sterkere, snellere, explosievere en weerbaardere spelers te ontwikkelen.</p><div className="actions"><Link className="btn btn-orange" href="/contact">Plan een proeftraining →</Link><Link className="btn btn-outline" href="/footwork-8">Bekijk FOOTWORK 8</Link></div></div>
       <div className="hero-visual"><Image src="/images/hero-athletes.jpg" alt="FOOTWORK ACADEMY voetbal en performance training" fill priority sizes="(max-width: 900px) 100vw, 50vw"/><div className="hero-badge">MORE THAN<br/><em>FOOTBALL.</em></div></div>
     </section>
     <section className="pillarbar">{pillars.map(([icon,title,text])=><div className="pillar" key={title}><b>{icon}</b><span><strong>{title}</strong><small>{text}</small></span></div>)}</section>
