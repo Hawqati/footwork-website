@@ -5,16 +5,16 @@
 .brand-logo-wrap img{display:block;width:100%;height:auto;max-height:57px;object-fit:contain}
 .brand-academy{margin-top:-2px;color:#fff;font-size:10px;font-weight:900;letter-spacing:.48em;padding-left:.48em}
 .header-descriptor{display:block;color:#fff;font-size:9px;font-weight:800;line-height:1.35;letter-spacing:.13em;text-transform:uppercase;white-space:nowrap;border-left:1px solid #292929;padding-left:20px}
-.header-descriptor em{color:var(--lime);font-style:normal}
+.header-descriptor em{color:#fff;font-style:normal}
 .footer-brand{display:inline-flex;flex-direction:column;align-items:center}
 .footer-brand img{display:block;height:auto}
 .footer-brand-academy{margin-top:-8px;color:#fff;font-size:10px;font-weight:900;letter-spacing:.48em;padding-left:.48em}
 
-/* Header navigation: normal links, lime italic F4/8 accents, green Rooster button, orange Proeftraining CTA. */
+/* Premium header: navigation stays monochrome; only the primary trial CTA uses orange. */
 .nav-links{gap:22px}
-.nav-links .nav-accent{color:var(--lime);font-style:italic;font-weight:1000;display:inline-block;transform:skewX(-5deg);letter-spacing:-.02em}
-.nav-links .nav-rooster{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 22px;border-radius:999px;background:var(--lime);color:#080808!important;font-size:11px;font-weight:950;letter-spacing:.045em;text-transform:uppercase;transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}
-.nav-links .nav-rooster:hover{color:#080808!important;transform:translateY(-1px);filter:brightness(1.05);box-shadow:0 7px 20px rgba(185,240,0,.14)}
+.nav-links .nav-accent{color:#fff;font-style:normal;font-weight:950;display:inline-block;transform:none;letter-spacing:inherit}
+.nav-links .nav-rooster{display:inline-flex;align-items:center;justify-content:center;min-height:0;padding:0;background:transparent;color:#fff!important;font-size:inherit;font-weight:inherit;letter-spacing:inherit;text-transform:inherit;border-radius:0;box-shadow:none;transition:color .18s ease}
+.nav-links .nav-rooster:hover{color:#d8d8d3!important;transform:none;filter:none;box-shadow:none}
 .nav-trial{background:var(--orange)!important;color:#fff!important;border-color:var(--orange)!important;min-height:44px;padding-left:22px;padding-right:22px}
 .nav-trial:hover{color:#fff!important;filter:brightness(1.06);box-shadow:0 7px 20px rgba(255,116,23,.16)}
 
@@ -24,27 +24,27 @@ body{font-family:"Segoe UI",Inter,"Helvetica Neue",Arial,sans-serif}
 .hero p,.page-hero p,.section>p,.section-copy>p,.club-copy>p,.lead-band>div>p,.mini-cta>p,.two-col p{font-size:16px;line-height:1.62;color:#d2d2cd}
 .card p,.method-grid p,.feature-grid p,.audience-grid p,.test-grid p,.process-grid p,.pricing-grid p,.founder-grid p{font-size:14px;line-height:1.55;letter-spacing:-.008em;color:#a6a6a0}
 
-/* Homepage program buttons: FOOTWORK 8 and F4 share one athletic badge style. */
+/* Homepage program buttons: dark and restrained, with lime only on the 8 and F4 marks. */
 .hero-copy .actions{align-items:stretch;flex-wrap:wrap}
 .btn-f4,.btn-program8{min-width:190px;gap:12px;border-color:#343434;background:#0a0a0a;color:#fff;padding:8px 20px;text-align:left;justify-content:flex-start}
 .btn-f4 strong,.btn-program8 strong{color:var(--lime);font-size:30px;font-style:italic;line-height:1;font-weight:950;letter-spacing:-.06em;transform:skewX(-5deg)}
-.btn-f4 span,.btn-program8 span{font-size:9px;line-height:1.15;letter-spacing:.1em;font-weight:900}
-.btn-f4:hover,.btn-program8:hover{border-color:var(--lime);background:#0d1007;box-shadow:0 0 22px rgba(185,240,0,.09)}
+.btn-f4 span,.btn-program8 span{font-size:9px;line-height:1.15;letter-spacing:.1em;font-weight:900;color:#fff}
+.btn-f4:hover,.btn-program8:hover{border-color:#5a5a56;background:#0d0d0d;box-shadow:none}
 
 /* Keep the existing cards/design; only make the three training visuals cleaner and brighter. */
 .programs .card-img{height:230px;overflow:hidden;background:#080808}
 .programs .card-img img{object-fit:cover;object-position:center top;filter:brightness(1.22) contrast(1.08) saturate(.9);transform:scale(1.045)}
 .programs .card-img:after{background:linear-gradient(180deg,transparent 72%,rgba(0,0,0,.32))}
 
-/* Force only the Sterker lightning mark to render as a lime monochrome symbol. */
-.pillar:first-child b{color:var(--lime);font-family:Arial,Helvetica,sans-serif;font-variant-emoji:text;font-size:36px;text-shadow:0 0 14px rgba(185,240,0,.18)}
+/* Lime is reserved for meaningful performance accents. */
+.pillar:first-child b{color:var(--lime);font-family:Arial,Helvetica,sans-serif;font-variant-emoji:text;font-size:36px;text-shadow:none}
 
-/* Compact trust points inside the open space of the homepage hero. */
+/* Trust points: quiet monochrome cards with lime reserved for their labels. */
 .hero-copy .trust-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:26px;padding:0;background:transparent;border:0;max-width:760px}
-.hero-copy .trust-strip>div{min-width:0;padding:11px 12px;border:1px solid #2b2b2b;background:rgba(10,10,10,.78);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease,background .2s ease}
+.hero-copy .trust-strip>div{min-width:0;padding:11px 12px;border:1px solid #2b2b2b;background:rgba(10,10,10,.78);transition:transform .2s ease,border-color .2s ease,background .2s ease}
 .hero-copy .trust-strip strong{display:block;color:var(--lime);font-size:10px;line-height:1.2;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
 .hero-copy .trust-strip span{display:block;color:#9e9e98;font-size:10px;line-height:1.35}
-.hero-copy .trust-strip>div:hover{transform:translateY(-2px);border-color:rgba(185,240,0,.75);background:#0d0f09;box-shadow:0 0 0 1px rgba(185,240,0,.08),0 8px 26px rgba(185,240,0,.12)}
+.hero-copy .trust-strip>div:hover{transform:translateY(-2px);border-color:#454541;background:#0d0d0d;box-shadow:none}
 
 /* Approved F4 method composition: image left, large F4 and compact content right. */
 .f4-showcase{align-items:stretch}
@@ -58,9 +58,9 @@ body{font-family:"Segoe UI",Inter,"Helvetica Neue",Arial,sans-serif}
 .f4-copy>p{max-width:720px;margin-top:0}
 .f4-copy .method-grid{margin-top:22px}
 
-/* Subtle hover glow across content blocks without changing the design language. */
-.pillar,.card,.method-grid article,.audience-grid article,.feature-grid article,.test-grid article,.process-grid article,.pricing-grid article,.contact-cards article,.founder-grid article,.home-stat-row div{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease,background .2s ease}
-.pillar:hover,.card:hover,.method-grid article:hover,.audience-grid article:hover,.feature-grid article:hover,.test-grid article:hover,.process-grid article:hover,.pricing-grid article:hover,.contact-cards article:hover,.founder-grid article:hover,.home-stat-row div:hover{transform:translateY(-3px);border-color:rgba(185,240,0,.58);box-shadow:0 10px 30px rgba(185,240,0,.08);background:#0d0f09}
+/* Content blocks stay premium and restrained: movement without neon glow. */
+.pillar,.card,.method-grid article,.audience-grid article,.feature-grid article,.test-grid article,.process-grid article,.pricing-grid article,.contact-cards article,.founder-grid article,.home-stat-row div{transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.pillar:hover,.card:hover,.method-grid article:hover,.audience-grid article:hover,.feature-grid article:hover,.test-grid article:hover,.process-grid article:hover,.pricing-grid article:hover,.contact-cards article:hover,.founder-grid article:hover,.home-stat-row div:hover{transform:translateY(-2px);border-color:#444440;box-shadow:none;background:#0d0d0d}
 
 @media(max-width:1250px){.header-descriptor{display:none}}
 @media(max-width:1100px){
