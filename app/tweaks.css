@@ -23,12 +23,12 @@ body{font-family:"Segoe UI",Inter,"Helvetica Neue",Arial,sans-serif}
 .hero p,.page-hero p,.section>p,.section-copy>p,.club-copy>p,.lead-band>div>p,.mini-cta>p,.two-col p{font-size:16px;line-height:1.62;color:#d2d2cd}
 .card p,.method-grid p,.feature-grid p,.audience-grid p,.test-grid p,.process-grid p,.pricing-grid p,.founder-grid p{font-size:14px;line-height:1.55;letter-spacing:-.008em;color:#a6a6a0}
 
-/* Third homepage action: compact F4 method badge/button. */
+/* Homepage program buttons: FOOTWORK 8 and F4 share one athletic badge style. */
 .hero-copy .actions{align-items:stretch;flex-wrap:wrap}
-.btn-f4{min-width:190px;gap:12px;border-color:#343434;background:#0a0a0a;color:#fff;padding:8px 20px;text-align:left;justify-content:flex-start}
-.btn-f4 strong{color:var(--lime);font-size:30px;font-style:italic;line-height:1;font-weight:950;letter-spacing:-.06em}
-.btn-f4 span{font-size:9px;line-height:1.15;letter-spacing:.1em;font-weight:900}
-.btn-f4:hover{border-color:var(--lime);background:#0d1007;box-shadow:0 0 22px rgba(185,240,0,.09)}
+.btn-f4,.btn-program8{min-width:190px;gap:12px;border-color:#343434;background:#0a0a0a;color:#fff;padding:8px 20px;text-align:left;justify-content:flex-start}
+.btn-f4 strong,.btn-program8 strong{color:var(--lime);font-size:30px;font-style:italic;line-height:1;font-weight:950;letter-spacing:-.06em;transform:skewX(-5deg)}
+.btn-f4 span,.btn-program8 span{font-size:9px;line-height:1.15;letter-spacing:.1em;font-weight:900}
+.btn-f4:hover,.btn-program8:hover{border-color:var(--lime);background:#0d1007;box-shadow:0 0 22px rgba(185,240,0,.09)}
 
 /* Keep the existing cards/design; only make the three training visuals cleaner and brighter. */
 .programs .card-img{height:230px;overflow:hidden;background:#080808}
@@ -87,5 +87,5 @@ body{font-family:"Segoe UI",Inter,"Helvetica Neue",Arial,sans-serif}
   .f4-heading>strong{font-size:58px}
   .f4-heading h2{font-size:31px}
   .f4-copy .method-grid{margin-top:16px}
-  .btn-f4{width:100%;justify-content:center}
+  .btn-f4,.btn-program8{width:100%;justify-content:center}
 }
