@@ -9,35 +9,8 @@
 
 /* Keep the existing cards/design; only make the three training visuals cleaner and brighter. */
 .programs .card-img{height:230px;overflow:hidden;background:#080808}
-.programs .card-img img{object-fit:cover;object-position:center top;filter:brightness(1.14) contrast(1.06) saturate(.95);transform:scale(1.02)}
-.programs .card-img:after{background:linear-gradient(180deg,transparent 72%,rgba(0,0,0,.26))}
-
-/* Clearly visible cinematic movement on the homepage hero image. */
-.hero-visual{overflow:hidden;position:relative}
-.hero-visual>img{transform-origin:center center;animation:heroKenBurns 8s ease-in-out infinite alternate;will-change:transform}
-.hero-visual:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,rgba(185,240,0,0) 35%,rgba(185,240,0,.055) 50%,rgba(185,240,0,0) 65%);transform:translateX(-120%);animation:heroSweep 6s ease-in-out infinite}
-.hero-badge{animation:heroBadgeFloat 3.2s ease-in-out infinite;will-change:transform}
-@keyframes heroKenBurns{0%{transform:scale(1.02) translate3d(0,0,0)}50%{transform:scale(1.08) translate3d(-1.5%,-.5%,0)}100%{transform:scale(1.14) translate3d(-3%,-1.2%,0)}}
-@keyframes heroSweep{0%,18%{transform:translateX(-120%)}55%,100%{transform:translateX(120%)}}
-@keyframes heroBadgeFloat{0%,100%{transform:translateY(0) rotate(-.35deg)}50%{transform:translateY(-10px) rotate(.35deg)}}
-
-/* F4 method section — matched to the approved mockup. */
-.method-showcase{display:grid;grid-template-columns:minmax(360px,.92fr) minmax(0,1.35fr);gap:4.2vw;align-items:stretch;padding:0 4.5vw;background:#050505;border-top:1px solid #151515;border-bottom:1px solid #151515}
-.method-photo{position:relative;min-height:760px;overflow:hidden;background:#060606;border-left:1px solid #222;border-right:1px solid #222}
-.method-photo img{object-fit:cover;object-position:center 36%;filter:grayscale(1) contrast(1.1) brightness(.88)}
-.method-content{display:flex;flex-direction:column;justify-content:center;padding:64px 0 58px;min-width:0}
-.method-title-row{display:grid;grid-template-columns:auto 1fr;align-items:start;column-gap:28px;margin-bottom:26px}
-.method-f4{color:var(--lime);font-weight:1000;font-style:italic;font-size:clamp(118px,9.8vw,190px);line-height:.72;letter-spacing:-.09em;padding-top:2px}
-.method-title-row h2{margin:0;font-size:clamp(58px,5.35vw,96px);line-height:.78;letter-spacing:-.05em;font-style:italic;font-weight:1000}
-.method-intro{max-width:980px;margin:10px 0 22px;font-size:17px;line-height:1.65;color:#cfcfca}
-.method-showcase .method-grid{margin-top:8px;gap:12px}
-.method-showcase .method-grid article{min-height:142px;padding:25px 28px}
-.method-showcase .method-grid span{font-size:18px}
-.method-showcase .method-grid h3{font-size:24px;margin:9px 0 8px}
-.method-showcase .method-grid p{font-size:14px;line-height:1.45}
-.method-actions{display:flex;gap:16px;align-items:center;margin-top:22px;flex-wrap:wrap}
-.method-actions .btn{min-width:225px}
-.club-photo img{object-fit:cover;object-position:center;filter:contrast(1.06) brightness(1.02)}
+.programs .card-img img{object-fit:cover;object-position:center top;filter:brightness(1.22) contrast(1.08) saturate(.9);transform:scale(1.045)}
+.programs .card-img:after{background:linear-gradient(180deg,transparent 72%,rgba(0,0,0,.32))}
 
 /* Force only the Sterker lightning mark to render as a lime monochrome symbol. */
 .pillar:first-child b{color:var(--lime);font-family:Arial,Helvetica,sans-serif;font-variant-emoji:text;font-size:36px;text-shadow:0 0 14px rgba(185,240,0,.18)}
@@ -55,12 +28,6 @@
 
 @media(max-width:1100px){
   .hero-copy .trust-strip{grid-template-columns:repeat(2,minmax(0,1fr));max-width:620px}
-  .method-showcase{grid-template-columns:1fr;padding:0}
-  .method-photo{min-height:560px;border-left:0;border-right:0}
-  .method-content{padding:58px 5vw 64px}
-  .method-title-row{grid-template-columns:auto 1fr;gap:18px}
-  .method-f4{font-size:clamp(92px,14vw,145px)}
-  .method-title-row h2{font-size:clamp(48px,8vw,78px)}
 }
 
 @media(max-width:650px){
@@ -71,12 +38,4 @@
   .hero-copy .trust-strip>div{padding:10px}
   .hero-copy .trust-strip strong{font-size:9px}
   .hero-copy .trust-strip span{font-size:9px}
-  .method-photo{min-height:430px}
-  .method-content{padding:44px 20px 52px}
-  .method-title-row{grid-template-columns:1fr;gap:10px}
-  .method-f4{font-size:92px;line-height:.72}
-  .method-title-row h2{font-size:44px;line-height:.84}
-  .method-showcase .method-grid article{min-height:auto;padding:20px}
-  .method-actions{flex-direction:column;align-items:stretch}
-  .method-actions .btn{width:100%;min-width:0}
 }
