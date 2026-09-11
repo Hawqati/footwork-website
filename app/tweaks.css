@@ -12,17 +12,23 @@
 .programs .card-img img{object-fit:cover;object-position:center top;filter:brightness(1.22) contrast(1.08) saturate(.9);transform:scale(1.045)}
 .programs .card-img:after{background:linear-gradient(180deg,transparent 72%,rgba(0,0,0,.32))}
 
-/* Subtle cinematic movement on the homepage hero image. */
-.hero-visual{overflow:hidden}
-.hero-visual>img{transform:scale(1.035);animation:heroKenBurns 12s ease-in-out infinite alternate;will-change:transform}
-.hero-badge{animation:heroBadgeFloat 4.8s ease-in-out infinite;will-change:transform}
+/* Clearly visible cinematic movement on the homepage hero image. */
+.hero-visual{overflow:hidden;position:relative}
+.hero-visual>img{transform-origin:center center;animation:heroKenBurns 8s ease-in-out infinite alternate;will-change:transform}
+.hero-visual:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,rgba(185,240,0,0) 35%,rgba(185,240,0,.055) 50%,rgba(185,240,0,0) 65%);transform:translateX(-120%);animation:heroSweep 6s ease-in-out infinite}
+.hero-badge{animation:heroBadgeFloat 3.2s ease-in-out infinite;will-change:transform}
 @keyframes heroKenBurns{
-  0%{transform:scale(1.035) translate3d(0,0,0)}
-  100%{transform:scale(1.09) translate3d(-1.2%,-.8%,0)}
+  0%{transform:scale(1.02) translate3d(0,0,0)}
+  50%{transform:scale(1.08) translate3d(-1.5%,-.5%,0)}
+  100%{transform:scale(1.14) translate3d(-3%,-1.2%,0)}
+}
+@keyframes heroSweep{
+  0%,18%{transform:translateX(-120%)}
+  55%,100%{transform:translateX(120%)}
 }
 @keyframes heroBadgeFloat{
-  0%,100%{transform:translateY(0)}
-  50%{transform:translateY(-6px)}
+  0%,100%{transform:translateY(0) rotate(-.35deg)}
+  50%{transform:translateY(-10px) rotate(.35deg)}
 }
 
 /* Force only the Sterker lightning mark to render as a lime monochrome symbol. */
@@ -51,8 +57,4 @@
   .hero-copy .trust-strip>div{padding:10px}
   .hero-copy .trust-strip strong{font-size:9px}
   .hero-copy .trust-strip span{font-size:9px}
-}
-
-@media (prefers-reduced-motion: reduce){
-  .hero-visual>img,.hero-badge{animation:none!important;transform:none!important}
 }
